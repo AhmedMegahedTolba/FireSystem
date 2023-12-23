@@ -1,0 +1,13 @@
+ 
+
+
+#ifndef SENSORS_INTERFACE_H_
+#define SENSORS_INTERFACE_H_
+/* return temp c*10 *///
+u16 Temp_Read(void);// ???? ?????? ????? u8 ?? ???? ???? ?? sensor ?????
+u16 Pressure_Read(void);
+s16 Interpolation(s16 x1,s16 x2,s16 y1,s16 y2,s16 x);
+
+#define MPX4115_ON    PINC3
+
+#endif /* SENSORS_INTERFACE_H_ */
